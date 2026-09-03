@@ -1,0 +1,5 @@
+# Dependencias (se regeneran con npm install)
+node_modules/
+
+# Credenciales: NUNCA subir al repositorio
+.env
