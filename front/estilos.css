@@ -1,0 +1,242 @@
+/* ============================================================
+   Estilos - Complejo Los Aromos (Clase 08)
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f3;
+    color: #2d3436;
+}
+
+/* --- Encabezado --- */
+.encabezado {
+    background-color: #2e5339;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 16px;
+}
+
+.encabezado p {
+    opacity: 0.85;
+}
+
+/* --- Navegación --- */
+.navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    background-color: #1d3a26;
+    padding: 12px;
+}
+
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navegacion a:hover {
+    text-decoration: underline;
+}
+
+/* --- Contenido principal --- */
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 16px;
+    align-items: flex-start;
+}
+
+.seccion {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 400px;
+}
+
+.seccion h2 {
+    color: #2e5339;
+    margin-bottom: 14px;
+}
+
+/* --- Formulario --- */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fila-campos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1 1 150px;
+}
+
+.campo label {
+    font-weight: 600;
+    font-size: 0.92rem;
+}
+
+.campo input {
+    padding: 10px;
+    border: 1px solid #c8d6c9;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.formulario button {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #2e5339;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #1d3a26;
+}
+
+/* --- Mensajes --- */
+.mensaje {
+    margin-top: 12px;
+    font-weight: 600;
+    min-height: 1.2em;
+}
+
+.mensaje.ok {
+    color: #2e7d32;
+}
+
+.mensaje.error {
+    color: #c62828;
+}
+
+/* --- Tarjetas de cabañas disponibles --- */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 14px;
+}
+
+.tarjeta {
+    border: 1px solid #c8d6c9;
+    border-left: 6px solid #2e5339;
+    border-radius: 8px;
+    padding: 14px;
+    flex: 1 1 220px;
+    background-color: #fbfdf9;
+}
+
+.tarjeta h3 {
+    color: #1d3a26;
+    margin-bottom: 4px;
+    font-size: 1.05rem;
+}
+
+.tarjeta p {
+    margin: 2px 0;
+    font-size: 0.92rem;
+}
+
+.tarjeta .total {
+    margin-top: 6px;
+    font-weight: 700;
+    color: #2e5339;
+}
+
+.tarjeta button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #2e5339;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tarjeta button:hover {
+    background-color: #1d3a26;
+}
+
+/* --- Lista de reservas --- */
+.lista-reservas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.reserva {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #c8d6c9;
+    border-left: 5px solid #2e5339;
+    border-radius: 8px;
+    padding: 10px 12px;
+    background-color: #fbfdf9;
+    flex-wrap: wrap;
+}
+
+.reserva p {
+    font-size: 0.92rem;
+}
+
+.reserva .monto {
+    font-weight: 700;
+    color: #2e5339;
+}
+
+.reserva button {
+    padding: 6px 10px;
+    background-color: #ffcdd2;
+    color: #b71c1c;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.sin-resultados {
+    color: #777;
+}
+
+/* --- Pie de página --- */
+.pie {
+    text-align: center;
+    padding: 16px;
+    background-color: #1d3a26;
+    color: #ffffff;
+    margin-top: 24px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 700px) {
+    .principal {
+        flex-direction: column;
+    }
+}
