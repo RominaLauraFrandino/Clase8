@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complejo Los Aromos - Reservas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>🌲 Complejo Los Aromos</h1>
+        <p>Cabañas en Villa del Rosario</p>
+    </header>
+
+    <nav class="navegacion">
+        <a href="#buscar">Disponibilidad</a>
+        <a href="#reservas">Reservas</a>
+    </nav>
+
+    <main class="principal">
+
+        <!-- Buscador de disponibilidad -->
+        <section id="buscar" class="seccion">
+            <h2>Buscar disponibilidad</h2>
+
+            <form id="formBusqueda" class="formulario">
+
+                <div class="fila-campos">
+                    <div class="campo">
+                        <label for="desde">Ingreso</label>
+                        <input type="date" id="desde" required>
+                    </div>
+                    <div class="campo">
+                        <label for="hasta">Salida</label>
+                        <input type="date" id="hasta" required>
+                    </div>
+                </div>
+
+                <div class="fila-campos">
+                    <div class="campo">
+                        <label for="cliente">Nombre del cliente</label>
+                        <input type="text" id="cliente" maxlength="100"
+                               placeholder="Ej: Familia Peralta" required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" id="telefono" maxlength="20"
+                               placeholder="Ej: 3573-401234" required>
+                    </div>
+                </div>
+
+                <button type="submit">Buscar cabañas libres</button>
+            </form>
+
+            <p id="mensaje" class="mensaje"></p>
+
+            <div id="resultado" class="tarjetas">
+                <p class="sin-resultados">Elegí las fechas y buscá disponibilidad.</p>
+            </div>
+        </section>
+
+        <!-- Reservas registradas -->
+        <section id="reservas" class="seccion">
+            <h2>Reservas</h2>
+            <div id="listadoReservas" class="lista-reservas"></div>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <p>Programación II - Clase 08 · Instituto Superior Villa del Rosario · 2026</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
